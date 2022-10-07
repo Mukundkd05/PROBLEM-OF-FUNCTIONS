@@ -1,0 +1,66 @@
+#include <iostream>
+using namespace std;
+
+int maximum(int a,int b,int c) {
+    
+    if(a>b){
+        if(a>c) {
+            cout << " MAXIMUM a =" << a << endl;
+        }
+        else {
+            cout << " MAXIMUM c =" << c << endl;
+        }
+    }
+    
+    else{
+        if(b>c) {
+            cout << " MAXIMUM b =" << b << endl;
+        }
+        else{
+            cout << " MAXIMUM c =" << c << endl;
+        }
+    }
+    return 0;
+    
+}
+
+int minimum( int a,int b,int c) {
+    
+    if(a<b){
+        if(a<c) {
+            cout << " MINIMUM a =" << a << endl;
+        }
+        else {
+            cout << " MINIMUM c =" << c << endl;
+        }
+    }
+    
+    else{
+        if(b<c) {
+            cout << " MINIMUM b =" << b << endl;
+        }
+        else{
+            cout << " MINIMUM c =" << c << endl;
+        }
+    }
+    return 0;
+}
+
+int main() {
+    
+    int a, b, c;
+    
+    cout << " a =";
+    cin >> a;
+    
+     cout << " b =";
+    cin >> b;
+    
+     cout << " c =";
+    cin >> c;
+    
+     maximum(a,b,c);
+     minimum(a,b,c);
+    
+    return 0;
+}
