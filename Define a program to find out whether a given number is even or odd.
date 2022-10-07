@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int oddeven(int n){
+    if(n%2 == 0){
+        cout << "NUMBER IS EVEN" << endl;
+    }
+    else{
+        cout << "NUMBER IS ODD" << endl;
+    }
+}
+
+int main(){
+    int n;
+    
+    cout << "ENTER THE NUMBER :" ;
+    cin >> n;
+    
+    oddeven(n);
+    
+    return 0;
+}
